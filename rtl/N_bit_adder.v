@@ -21,12 +21,12 @@ module N_bit_adder #
     generate
         for (i = 1; i < N; i = i + 1) begin : adder_block
     assign y[i] = a[i] ^ b[i] ^ carry[i-1];
-    assign carry[i] = (a[0] & b[0]) | ((a[0] ^ b[0]) & carry[i-1]);
+    assign carry[i] = (a[i] & b[i]) | ((a[i] ^ b[i]) & carry[i-1]);
         end
     endgenerate
 
     // Assign final carry-out
-    assign Cout = carry[7];
+    assign Cout = carry[N-1];
 
     
 endmodule
