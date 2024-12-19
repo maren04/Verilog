@@ -1,6 +1,6 @@
 module N_bit_subtractor #(
 
-    parameter N = 8; // N bits
+    parameter N = 16 // N bits
 ) (
     input wire [N-1:0]a,
     input wire [N-1:0]b,

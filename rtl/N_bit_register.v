@@ -2,7 +2,7 @@
 
 module N_bit_register #
 (
-    parameter N = 16 // N bits
+    parameter N = 8 // N bits
 ) (
     input wire clk,
     input wire en, // enable

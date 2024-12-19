@@ -1,5 +1,3 @@
-`include "full_adder.v"
-
 module N_bit_adder #
 (
     parameter N = 16 // N bits
